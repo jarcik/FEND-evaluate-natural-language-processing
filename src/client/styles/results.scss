@@ -1,0 +1,19 @@
+$border_width: 5px;
+$border_color: darkslateblue;
+
+h3 {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.responseBox {
+    margin: 20px;
+    label {
+        border-bottom: $border_width solid $border_color;
+    }
+    > div {
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+}

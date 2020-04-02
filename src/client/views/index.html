@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Test</title>
+    </head>
+
+    <body>
+
+        <header>
+            <div class="">
+                Logo
+            </div>
+            <div class="">
+                navigation
+            </div>
+        </header>
+
+        <main>
+            <section>
+                <form class="" onsubmit="return Client.handleSubmit(event)">
+                    <input id="userText" type="text" name="input" placeholder="Enter your text to classify" required>
+                    <input type="submit" name="submit" value="Submit" onsubmit="return Client.handleSubmit(event)" onclick="return Client.handleSubmit(event)">
+                </form>
+                <div id="errorMessage" class="hidden"></div>
+            </section>
+
+            <section>
+                <h3>Form Results</h3>
+                <div id="results">
+                    <div class="responseBox">
+                        <label>Your text</label><div id="yourText"></div>
+                    </div>
+                    <div class="responseBox">   
+                        <label>Polarity</label><div id="polarity"></div>
+                    </div>
+                    <div class="responseBox">
+                        <label>Subjectivity</label><div id="subjectivity"></div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Lovely footer. This app uses AYLIEN API to get you the results.</p>
+        </footer>
+        <script>
+            //check that service workers are supported
+            if ('serviceWorker' in navigator) {
+                //use the window load event to keep the page load performant
+                window.addEventListener('load', () => {
+                    navigator.serviceWorker.register('/service-worker.js');
+                });
+            }
+        </script>
+    </body>
+</html>

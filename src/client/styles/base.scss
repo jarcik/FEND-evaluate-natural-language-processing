@@ -1,0 +1,23 @@
+$border_color: teal;
+$border_width: 3px;
+$section_padding: 30px;
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main {
+    flex: 2;
+}
+
+section {
+    border: $border_width solid $border_color;
+    border-radius: 20px;
+    padding: $section_padding;
+    max-width: 800px;
+    margin: 10px auto;
+}
+
