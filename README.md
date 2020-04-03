@@ -11,6 +11,7 @@ Please, visit the package.json file for dependencies.
 With default settings:
 
 Firstly, run in command 'npm install' .
+Add your own '.env' to the root folder file with API KEY and API ID for the AYLIEN API.
 Make production build 'npm run build-prod' .
 Run the server 'node ./src/server/index.js' to start the server.
 In browser, navigate to localhost:8081 .
