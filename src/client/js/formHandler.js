@@ -39,9 +39,4 @@ function fetchData(formText) {
     })
 }
 
-//parse the data to json
-function parseData(res) {
-    return res;
-}
-
-export { handleSubmit, parseData }
+export { handleSubmit }

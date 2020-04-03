@@ -1,8 +1,8 @@
 
-import { parseData } from './formHandler';
+import { handleSubmit } from './formHandler';
 
-describe('parse data', () => {
-    test('parsing', () => {
-        expect(parseData({text: 'hello'})).toEqual({text: 'hello'});
-      });
+describe('handleSubmit', () => {
+    test('hadnle if there is a function', () => {
+        expect(typeof handleSubmit).toBe('function');
+    });
 });
